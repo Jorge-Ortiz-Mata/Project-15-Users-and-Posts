@@ -1,24 +1,17 @@
-# README
+# Project Users and Posts
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Using Ruby on Rails framework, in this application you will be able tocreate
+users and post. And on each user page, you can see all the posts belong to this user.
+All the details are in the description below. 
 
 Things you may want to cover:
 
-* Ruby version
+## Softwares and version.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby version: 3.0.3
+* Ruby on Rails version: 7.0.1
+* Windows 10.
+* Git and Github.
+* Bootstrap version: 5.1.3
+* Heroku link: (!https://users-and-posts-project.herokuapp.com/)
+* Database: PostgreSQL.
