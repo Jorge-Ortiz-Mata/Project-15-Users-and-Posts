@@ -21,13 +21,13 @@ gem "sassc-rails"
 gem "sass-rails"
 
 group :development, :test do
-  gem "sqlite3", "~> 1.4"
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "byebug"
 end
 
 group :development do
   gem "web-console"
+  gem "sqlite3", "~> 1.4"
   gem "spring"
   gem "spring-watcher-listen"
   gem "listen"
