@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Users</h1><br>
+<%= link_to "New user", new_user_path, class:"btn btn-success" %>
+<br><br>
+<div id="users">
+    <% @users.each do |user| %>
+      <%= render user %>
+    <% end %>
+  </div>
+</div>  
+
+
+  

@@ -1,0 +1,22 @@
+<div id="<%= dom_id user %>">
+  <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+    <div class="card-header">
+      <strong>First name: </strong><%= user.first_name %>
+    </div>
+    <div class="card-body">
+      <p>
+        <strong>Last name:</strong>
+        <%= user.last_name %>
+      </p>
+      <p>
+        <strong>Twitter:</strong>
+        <%= user.twitter %>
+      </p>
+      <br>
+      <p>
+          <%= link_to "Show this user", user, class:"btn btn-dark" %>
+      </p>
+    </div>
+  </div>
+  <br>
+</div>

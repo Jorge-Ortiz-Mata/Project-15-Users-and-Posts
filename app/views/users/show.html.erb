@@ -1,0 +1,21 @@
+<% provide(:h2_1, "#{@user.first_name}")%>
+<% provide(:h2_2, "#{@user.last_name}")%>
+<p style="color: green"><%= notice %></p>
+
+<h2>User: <%= @user.first_name %> <%= @user.last_name %></h2>
+<%= render @user %>
+
+<h2>Post of: <%= yield(:h2_1) %> <%= yield(:h2_2) %></h2>
+
+<% for i in 0...@user.posts.length %>
+  <%= @user.posts[i].title %>
+  <%= @user.posts[i].description %> <br><br>
+<% end %>
+
+
+<div>
+  <%= link_to "Edit user", edit_user_path(@user), class:"btn btn-info" %> |
+  <%= link_to "Back", users_path, class:"btn btn-secondary" %>
+  <br><br>
+  <%= button_to "Delete", @user, method: :delete, class:"btn btn-danger" %>
+</div>

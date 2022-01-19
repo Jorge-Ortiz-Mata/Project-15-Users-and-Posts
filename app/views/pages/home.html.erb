@@ -1,0 +1,26 @@
+<% provide(:h1, "Home Page") %>
+<% provide(:p1, "This the home page of this website.") %>
+<% provide(:p2, "You can create post and users by clicking on the links  above.") %>
+<% provide(:p3, "Jorge Ortiz Mata.") %>
+<% provide(:p4, "Engineer, entrepreneur, teacher and a student. ") %>
+<% provide(:title, "Home | Users and Posts.") %>
+
+
+<div class="card">
+  <div class="card-header">
+    <h5 class="card-title"><h1><%= yield(:h1) %></h1></h5>
+  </div>
+  <br><br>
+  <div class="card-body text-center">
+    <p class="card-text"><%= yield(:p1) %><b><%= yield(:p2) %></b>
+    </p>
+    <br><br>
+    <%= link_to "Users", users_path, class:"btn btn-primary" %>
+    <%= link_to "Posts", posts_path, class:"btn btn-primary" %>
+    <br><br><br><br><p class="card-text text-center">
+        <b><%= yield(:p3) %></b><br><br><%= link_to "", "https://github.com/Jorge-Ortiz-Mata", class:"fab fa-github" %> <%= link_to "", "https://www.linkedin.com/in/jorge-ortiz-ab1b18183/", class:"fab fa-linkedin" %> <%= link_to "", "https://bitbucket.org/jorge_ortiz_107/", class:"fab fa-bitbucket" %> <%= link_to "", "https://bitbucket.org/jorge_ortiz_107/", class:"fas fa-server" %><br><br>
+        <b><%= yield(:p4) %></b> 2022.
+    </p>
+    <br><br>
+  </div>
+</div>

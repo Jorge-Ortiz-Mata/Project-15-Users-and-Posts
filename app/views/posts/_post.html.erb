@@ -1,0 +1,23 @@
+<div id="<%= dom_id post %>">
+<div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+    <div class="card-header">
+      <strong>Title: </strong><%= post.title %>
+    </div>
+    <div class="card-body">
+      <p>
+        <strong>Description:</strong>
+        <%= post.description %>
+      </p>
+
+      <p>
+        <strong>User:</strong>
+        <%= post.user_id %>
+      </p>
+      <br>
+      <p>
+        <%= link_to "Show this post", post, class:"btn btn-dark" %>
+      </p>
+    </div>
+  </div>
+  <br>
+</div>
